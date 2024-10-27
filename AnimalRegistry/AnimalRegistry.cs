@@ -2,18 +2,17 @@
 {
     public class AnimalRegistry
     {
-        private List<Animal> animals = new List<Animal>();
+        private AnimalRepository _repository = new AnimalRepository();
 
         public void AddAnimal(Animal animal)
         {
-            animals.Add(animal);
-            AnimalCounter.AddAnimal();
+            _repository.AddAnimal(animal);
             Console.WriteLine($"{animal.Name} has been added to the registry.");
         }
 
         public Animal GetAnimalByName(string name)
         {
-            foreach(Animal animal in animals)
+            foreach(Animal animal in _repository.GetAllAnimals())
             {
                 if (animal.Name == name)
                     return animal;
@@ -51,7 +50,7 @@
 
         public void ShowAnimalsByBirthDate()
         {
-            foreach (var animal in animals)
+            foreach (var animal in _repository.GetAllAnimals())
             {
                 Console.WriteLine($"{animal.Name} was born on {animal.BirthDate.ToShortDateString()}");
             }
@@ -59,7 +58,7 @@
 
         public int GetTotalAnimalsCount()
         {
-            return AnimalCounter.GetCount();
+            return _repository.GetAllAnimals().Count;
         }
     }
 

@@ -3,16 +3,20 @@ using System.Collections.Generic;
 
 namespace AnimalRegistry;
 
-public abstract class Animal
+public class Animal
 {
+    public int Id { get; set; }
     public string Name { get; set; }
     public DateTime BirthDate { get; set; }
     public List<string> Commands { get; set; } = new List<string>();
 
-    public Animal(string name, DateTime birthDate)
+    public string Type { get; } // Тип животного (Dog, Cat, Hamster, Horse, Camel, Donkey)
+
+    public Animal(string name, DateTime birthDate, string type)
     {
         Name = name;
         BirthDate = birthDate;
+        Type = type;
     }
 
     public virtual void ShowCommands()
