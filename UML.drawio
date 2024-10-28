@@ -1,0 +1,43 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" version="24.8.2">
+  <diagram id="dT4_UAJD9KKSV2xhyDcy" name="Страница 1">
+    <mxGraphModel dx="1147" dy="655" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fX8kSdaLMVLi7RoWcLNR-1" value="Abstract Class &#xa;Animals" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="290" y="50" width="140" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="OHpblqBWoinc6lEbMaLX-1" value="ID&lt;div&gt;Name&lt;/div&gt;&lt;div&gt;Type&lt;br&gt;&lt;div&gt;Birthday&lt;/div&gt;&lt;div&gt;Commands&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="fX8kSdaLMVLi7RoWcLNR-1">
+          <mxGeometry y="40" width="140" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="fX8kSdaLMVLi7RoWcLNR-5" value="Class&#xa;Pets" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="90" y="258" width="140" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="fX8kSdaLMVLi7RoWcLNR-9" value="Class&#xa;PackedAnimals" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+          <mxGeometry x="510" y="258" width="140" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="fX8kSdaLMVLi7RoWcLNR-13" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.85;exitY=-0.042;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="fX8kSdaLMVLi7RoWcLNR-5" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="330" y="428" as="sourcePoint" />
+            <mxPoint x="330" y="178" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="209" y="228" />
+              <mxPoint x="330" y="228" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fX8kSdaLMVLi7RoWcLNR-14" value="Extends" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;exitX=0.457;exitY=-0.05;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="fX8kSdaLMVLi7RoWcLNR-9" edge="1">
+          <mxGeometry x="-0.1043" y="3" width="160" relative="1" as="geometry">
+            <mxPoint x="600" y="188" as="sourcePoint" />
+            <mxPoint x="400" y="178" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="574" y="228" />
+              <mxPoint x="400" y="228" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
